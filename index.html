@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+      <h1 id="header_title">Notifications <div id="header_title_notify-nb">3</div></h1>
+      <span><a href="#" id="header_all-is-read">Mark all as read</a></span>
+    </header>
+    <div id="content">
+      <article class="post post--new">
+        <img src="assets/images/avatar-mark-webber.webp" alt="" class="post_avatar">
+        <div class="post_container">
+          <p class="post_content">
+          <strong class="post_author"><a href="#">Mark Webber</a></strong>
+          reacted to your recent post <a href="#" class="post_link">My first tournament today!</a>
+          </p>
+          <span class="post_time">1m ago</span>
+        </div>
+      </article>
+      <article class="post post--new">
+        <img src="assets/images/avatar-angela-gray.webp" alt="" class="post_avatar">
+        <div class="post_container">
+          <p class="post_content">
+            <strong class="post_author"><a href="#">Angela Gray</a></strong>
+            followed you
+          </p>
+          <span class="post_time">5m ago</span>
+        </div>
+      </article>
+      <article class="post post--new">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="" class="post_avatar">
+        <div class="post_container">
+          <p class="post_content">
+            <strong class="post_author"><a href="#">Jacob Thompson</a></strong>
+            has joined your group <a href="#" class="post_link">Chess Club</a>
+          </p>
+          <span class="post_time">1 day ago</span>
+        </div>
+      </article>
+      <article class="post">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" class="post_avatar">
+        <div class="post_container">
+          <div class="post_content">
+            <p>
+              <strong class="post_author"><a href="#">Rizky Hasanuddin</a></strong>
+              sent you a private message
+            </p>
+            <div class="post_time">5 days ago</div>
+          </div>
+          <div class="post_content">
+            <p class="post_mp">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+      </article>
+      <article class="post">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="" class="post_avatar">
+        <div class="post_container">
+          <p class="post_content">
+            <strong class="post_author"><a href="#">Kimberly Smith</a></strong>
+            commented on your picture
+          </p>
+          <span class="post_time">1 week ago</span>
+        </div>
+        <img class="post_picture-commented" src="assets/images/image-chess.webp" alt="picture">
+      </article>
+      <article class="post">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="" class="post_avatar">
+        <div class="post_container">
+         <p class="post_content">
+          <strong class="post_author"><a href="#">Nathan Peterson</a></strong>
+          reacted to your recent post <a href="#" class="post_link">5 end-game strategies to increase your win rate</a>
+        </p>
+        <span class="post_time">2 weeks ago</span>
+        </div>
+      </article>
+      <article class="post">
+        <img src="assets/images/avatar-anna-kim.webp" alt="" class="post_avatar">
+        <div class="post_container">
+          <p class="post_content">
+            <strong class="post_author"><a href="#">Anna Kim</a></strong>
+            left the group <a href="#" class="post_link">Chess Club</a>
+          </p>
+          <span class="post_time">2 weeks ago</span>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
