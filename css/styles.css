@@ -10,12 +10,11 @@
             Grayish blue: hsl(219, 14%, 63%)
             Dark grayish blue: hsl(219, 12%, 42%)
             Very dark blue: hsl(224, 21%, 14%)
+
+            hsl(219, 12%, 42%) -> couleur des a
+            hsl(219, 85%, 26%) -> couleur des a:hover
+
  */
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     height: 100%;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -54,14 +53,14 @@ a:hover {
     align-items: baseline;
 }
 #header_title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     display: flex;
     align-items: center;
     column-gap: 0.4em;
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
 }
-#header_title_notify-nb{
+.header_title_notify-nb{
     display: inline;
     background-color: hsl(219, 85%, 26%);
     border-radius: 5px;
@@ -69,10 +68,18 @@ a:hover {
     font-size: 0.5em;
     padding: 2px 12px;
 }
+.notify--none{
+    background-color: hsl(205, 33%, 90%);
+    color: black;
+}
 #header_all-is-read{
     text-decoration: none;
     color: hsl(219, 12%, 42%);
 }
+#header_all-is-read:hover, .group {
+    color: hsl(219, 85%, 26%);
+}
+
 /* Post */
 .post {
     padding: 1em;
@@ -83,28 +90,28 @@ a:hover {
     /*flex-direction: column;*/
     border-radius: 10px;
     position: relative;
+    font-size: 0.9em;
 }
 .post_link {
     text-decoration: none;
-    color: hsl(219, 12%, 42%);
     font-weight: 800;
 }
 .post_link:hover{
     color: hsl(219, 85%, 26%);
 }
-.post_link:active{
-    color: hsl(219, 12%, 42%);
-}
+
 .post--new{
     background-color: hsl(210, 60%, 98%);
 }
-.post--new::after{
+.post--new .post_content::after{
     content: '';
     background-color: red;
     width: 10px;
     height: 10px;
     border-radius: 20px;
     margin-top: 0.6rem;
+    display: inline-block;
+    margin-left: 10px;
 }
 .post_mp {
     padding: 1rem;
@@ -137,6 +144,23 @@ a:hover {
 }
 .post_picture-commented {
     width: 50px;
+    border: 3px solid white;
     position: absolute;
-    right: 1rem;
+    right:1em;
+}
+.post_picture-commented:hover{
+    border: 3px solid hsl(210, 60%, 98%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #container{
+        margin: 0;
+        padding: 1em 0.5em;
+        width: auto;
+    }
+    .post_picture-commented{
+        position: unset;
+    }
 }
